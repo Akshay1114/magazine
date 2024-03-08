@@ -1,8 +1,11 @@
-body{
+html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
 }
-
 img{
     width: 100%;
 }
@@ -32,4 +35,20 @@ header{
     align-items: center;
     padding: 1rem;
     background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.scrollHeader{
+    background-color: brown;
+}
+main{
+    margin-top: 50px;
+}
+section{
+    height: 80vh;
+    border: 3px solid rgb(144, 21, 150);
+    background-color: rosybrown;
+    height: calc(100vh - 51px);
 }
