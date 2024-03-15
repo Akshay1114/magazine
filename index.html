@@ -1,30 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <span>Logo</span>
+        <!-- <div class="container"> -->
+            <span>Logo</span>
+            <div class="searchBar">
+              <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+              <input class="inputField" type="text" placeholder="Search" />
+            </div>
             <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="./story.html">Articles</a></li>
-                    <li><a href="./sources.html">Source</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
+              <div id="navBarToggle" class="mobil-toggle">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+      
+              <ul class="collaspe-bar" id="nav-bar">
+                <li><a href="/">Home</a></li>
+                <li><a href="./story.html">Articles</a></li>
+                <li><a href="./sources.html">Source</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
             </nav>
+        <!-- </div> -->
     </header>
     <main>
-        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magni alias in quos quod ratione velit numquam nesciunt vel doloribus quaerat sed expedita, accusamus aspernatur rem, voluptates ipsum quas ut?</section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="carasoule-section">
+            <div class="menu">
+                <div class="menu--wrapper">
+                  <div class="menu--item">
+                    <figure><img src="https://images.unsplash.com/photo-1595265677860-9a3168007dc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="https://images.unsplash.com/photo-1594786118579-95ba90c801ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="https://images.unsplash.com/photo-1509339022327-1e1e25360a41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="https://images.unsplash.com/photo-1525417071002-5ee4e6bb44f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="https://images.unsplash.com/photo-1594072702031-f0e2a602dd2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                  </div>
+              
+                  <div class="menu--item">
+                    <figure><img src="https://images.unsplash.com/photo-1592989819277-a3aafa40c66a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- <div class="content container">
+            <section>
+                <div class="sectionImg">
+                  <img src="./assets/images/dummy.jpeg" alt="hero" />
+                </div>
+                <div class="sectionContent">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magni
+                  alias in quos quod ratione velit numquam nesciunt vel doloribus
+                  quaerat sed expedita, accusamus aspernatur rem, voluptates ipsum quas
+                  ut?
+                </div>
+              </section>
+              <section>
+                <div class="sectionContent">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magni
+                  alias in quos quod ratione velit numquam nesciunt vel doloribus
+                  quaerat sed expedita, accusamus aspernatur rem, voluptates ipsum quas
+                  ut?
+                </div>
+                <div class="sectionImg">
+                    <img src="./assets/images/dummy.jpeg" alt="hero" />
+                  </div>
+              </section>
+              <section>
+                <div class="sectionImg">
+                  <img src="./assets/images/dummy.jpeg" alt="hero" />
+                </div>
+                <div class="sectionContent">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magni
+                  alias in quos quod ratione velit numquam nesciunt vel doloribus
+                  quaerat sed expedita, accusamus aspernatur rem, voluptates ipsum quas
+                  ut?
+                </div>
+              </section>
+              <section>
+                
+                <div class="sectionContent">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magni
+                  alias in quos quod ratione velit numquam nesciunt vel doloribus
+                  quaerat sed expedita, accusamus aspernatur rem, voluptates ipsum quas
+                  ut?
+                </div>
+                <div class="sectionImg">
+                    <img src="./assets/images/dummy.jpeg" alt="hero" />
+                  </div>
+              </section>
+              <section>
+                <div class="sectionImg">
+                  <img src="./assets/images/dummy.jpeg" alt="hero" />
+                </div>
+                <div class="sectionContent">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magni
+                  alias in quos quod ratione velit numquam nesciunt vel doloribus
+                  quaerat sed expedita, accusamus aspernatur rem, voluptates ipsum quas
+                  ut?
+                </div>
+              </section>
+        </div> -->
+     
     </main>
-    <footer></footer>
-</body>
-<script src="./assets/js/index.js"></script>
+    <footer>
+        
+    </footer>
+  </body>
+  <script src="./assets/js/index.js"></script>
 </html>
