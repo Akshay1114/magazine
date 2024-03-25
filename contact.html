@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h2>
+        <!-- <div class="container"> -->
+            <span>Logo</span>
+            <div class="searchBar">
+              <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+              <input class="inputField" type="text" placeholder="Search" />
+            </div>
             <nav>
-                <ul>
-                    <li><a href="./story.html">Articles</a></li>
-                    <li><a href="./sources.html"></a>Source</li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href="./contact.html"></a>Contact</li>
-                </ul>
+              <div id="navBarToggle" class="mobil-toggle">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+      
+              <ul class="collaspe-bar" id="nav-bar">
+                <li><a href="/">Home</a></li>
+                <li><a href="./story.html">Articles</a></li>
+                <li><a href="./sources.html">Source</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
             </nav>
-        </h2>
+        <!-- </div> -->
     </header>
+    <div class="contact_us">
+        <form>
+            <h1>Contact Us Form</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Type Your Message Here...</h4>
+            <textarea required></textarea>
+            <button type="submit" id="button">Send</button>
+        </form>
+    </div>
 </body>
 </html>

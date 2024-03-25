@@ -8,7 +8,7 @@ window.onscroll = function() {
     }
 }
 
-
+console.log(">>>>>>>>>",window.location);
 // get Elements
 // let getTogleNav = document.getElementById("navBarToggle");
 const getElementbyId = (id) => document.getElementById(id);
